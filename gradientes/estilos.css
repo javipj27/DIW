@@ -1,0 +1,68 @@
+h1{
+    background: linear-gradient(purple,pink);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;}
+div{
+    margin-top: 20px;
+}
+#d1 {
+    background: linear-gradient(to right, black, blue, yellow, green, red);
+    width: 500px;
+    height: 150px;
+}
+#d2 {
+    background: repeating-linear-gradient(blue 0% 10%, yellow 10% 20%, red 20% 30%);
+    width: 500px;
+    height: 150px;
+}
+#d3 {
+    background: radial-gradient(yellow 1%, rgb(255, 102, 0), red, black);
+    width: 350px;
+    height: 150px;
+}
+#d4 {
+    background: radial-gradient(farthest-side, yellow 70%, red, black);
+    width: 350px;
+    height: 150px;
+}
+#d5 {
+    background: radial-gradient(circle, yellow 70%, red, black);
+    width: 350px;
+    height: 150px;
+}
+#d6 {
+    background: radial-gradient(circle at left, yellow 70%, red, black);
+    width: 350px;
+    height: 150px;
+}
+#d7 {
+    width: 500px;
+    height: 100px;
+    background: radial-gradient(circle, blue, purple, red, orange, yellow);
+}
+#d8 {
+    width: 500px;
+    height: 100px;
+    background: radial-gradient(circle, blue 0%, red 15%, orange 35%, yellow 70%);
+}
+#d9 {
+    width: 500px;
+    height: 100px;
+    background: radial-gradient(circle, blue, purple, red, orange 80%, yellow);
+}
+#d10 {
+    width: 400px;
+    height: 250px;
+    background: repeating-radial-gradient(circle, rgb(255, 72, 72) 0% 10%, red 10% 20%, rgb(134, 0, 0) 20% 30%);
+}
+#d11 {
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0) 0%, blue);
+}
+#d12 {
+    width: 400px;
+    height: 250px;
+    background: repeating-conic-gradient(red 0%, yellow 10%, blue 20%);
+}

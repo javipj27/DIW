@@ -1,0 +1,133 @@
+#cont1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+#cont1 div {
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: grey;
+    width: 60%;
+}
+
+#A {
+    box-shadow: -5px -5px red;
+}
+#B {
+    box-shadow: -5px -5px 5px blue;
+}
+#C {
+    box-shadow: -6px -6px 0px 6px rgb(0, 255, 0);
+}
+#D {
+    box-shadow: -6px -6px 6px 6px rgb(52, 171, 240);
+}
+#E {
+    box-shadow: 0px 0px 5px 0px rgb(253, 88, 245);
+}
+#F {
+    box-shadow: 0px 0px 5px 5px yellow;
+}
+#G {
+    box-shadow: 3px 3px 0px 3px rgb(196, 1, 196);
+}
+#H {
+    box-shadow: inset -5px -5px 0px 0px blue;
+}
+#I {
+    box-shadow: inset -8px -8px 0px 0px rgb(255, 0, 98);
+}
+#J {
+    box-shadow: inset -7px -7px 5px 7px rgb(255, 0, 98);
+}
+#K {
+    box-shadow: inset 0px 0px 6px 0px blue;
+}
+#L {
+    box-shadow: inset 0px 0px 15px 0px rgb(0, 0, 0);
+}
+
+#cont2 {
+    margin-top: 100px;
+    width: 100%;
+}
+
+#cont2 div {
+    font-size: 40px;
+    width: 40%;
+    height: 80px;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sombra {
+    font-size: 36px;
+    color: purple;
+    text-shadow: 2px 2px 5px gray;
+    border: 4px solid black;
+}
+
+#blanco {
+    font-size: 36px;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    border: 4px solid black;
+    background-color: rgb(106, 208, 255);
+}
+
+#relieve {
+    font-size: 36px;
+    color: beige;
+    text-shadow: 1px 1px 0px black;
+    border: 4px solid black;
+    background-color: beige;
+}
+
+#hundido {
+    font-size: 36px;
+    color: rgb(156, 150, 147);
+    text-shadow: -1px -1px 0px black;
+    border: 4px solid black;
+    background-color: rgb(156, 150, 147);
+}
+
+#contorno {
+    font-size: 36px;
+    color: rgb(51, 130, 209);
+    text-shadow: 0px 0px 1px black;
+    border: 4px solid black;
+    background-color: rgb(51, 130, 209);
+}
+
+#neon1 {
+    font-size: 36px;
+    color: black;
+    text-shadow: -1px -1px 4px orangered;
+    border: 4px solid black;
+}
+
+#neon2 {
+    font-size: 36px;
+    color: black;
+    text-shadow: -1px -1px 4px purple;
+    border: 4px solid black;
+}
+
+#pixelart {
+    font-size: 36px;
+    color: gray;
+    text-shadow: 1px 0px 0px aqua;
+    border: 4px solid black;
+}
+
+#fuego {
+    font-size: 36px;
+    color: gray;
+    text-shadow: -1px -1px 0px yellow, -5px -5px 5px orange, -7px -7px 7px red;
+    border: 4px solid black;
+}
