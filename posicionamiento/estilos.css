@@ -1,0 +1,211 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* cabecera */
+
+#cabecera{
+    background-color: beige;
+    width: 100%;
+    height: 80px;
+    margin: 0px auto;
+    border-bottom: 2px solid rgb(0, 221, 0);
+}
+
+#cabecera h1{
+    text-align: center;
+    padding-top: 20px;
+    color: orange;
+    font-size: 30px;
+}
+
+
+/* barra de navegacion */
+
+#nav{
+    background-color: royalblue;
+    width: 62.5%;
+    height: 36px;
+    font-family: "sans-serif";
+    color: white;
+}
+
+#nav ul{
+    margin: 0px auto;
+    list-style: none;
+    text-decoration: none;
+    width: 1090px;
+}
+
+#nav > ul > li{
+    float: left;
+    line-height: 35px;
+    position: relative;
+}
+
+#nav > ul > li > a{
+    display: block;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-decoration: none;
+    
+}
+
+#nav > ul > li:hover{
+    background-color: black;
+    color: orange;
+}
+
+/* desplegable */
+
+#nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    width: 264px;
+}
+
+#nav > ul > li:hover > ul{
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li{
+    background-color: black;
+    border-bottom: 1px solid #f2f1f0;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+#nav > ul > li:hover > ul > li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: "Arial";
+    padding-left: 90px;
+}
+
+
+
+#nav > ul > li:hover > ul > li:hover {
+    background-color: orangered;
+    box-shadow: 0px 0px 6px #ccc inset ;
+} 
+
+
+/* barra lateral */
+#lateral{
+    width: 150px;
+    height: 159px;
+    background-color: rgb(180, 203, 253);
+    border-right: 2px solid gold;
+    
+}
+
+
+#lateral ul{
+    margin: 0px auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+#lateral ul > li{
+    padding-left: 30px;
+    padding-top: 8px;
+    border-bottom: 2px solid gold;
+    
+}
+
+#lateral ul > li > a{
+    text-decoration: none;
+    color:black;
+
+}
+
+#lateral ul> li:hover {
+    box-shadow: 0px 0px 4px blue inset;
+}
+
+#lateral ul> li:hover > a{
+    color: blue;
+}
+
+#lateral ul > li > a::before{
+    content: "👉";
+    margin-right: 8px;
+}
+
+
+
+#cabecera2{
+        background-color: beige;
+        width: 100%;
+        height: 80px;
+        margin: 0px auto;
+        border-bottom: 2px solid rgb(0, 221, 0);
+}
+#cabecera2 h1{
+    text-align: center;
+    padding-top: 20px;
+    color: orange;
+    font-size: 30px;
+}
+
+.img {
+    position: relative;
+    width: 500px; 
+    margin: 0px auto; 
+    
+  }
+
+
+.img img{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.img img:hover{
+    box-shadow: 0px 1px 3px gray inset;
+    cursor: pointer;
+}
+
+
+/* Pie de pagina*/
+
+#pie{
+    background-color: black;
+    height: 60px;
+    margin-top: 20px;
+}
+
+#pie a{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#pie .first{
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    
+}
+
+#pie .last{
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+#pie .first::before{
+    font-weight: bold;
+    content: "<<";
+}
+
+#pie .last::after{
+    font-weight: bold;
+    content: ">>";
+}
