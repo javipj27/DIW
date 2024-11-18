@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.pagina {
+    width: 75%;
+    height: 500px;
+    margin: 10px auto;
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr) ;
+}
+
+.imagen {
+    background-image: url("img.jpg");
+    background-size: cover;
+
+    grid-row: 1/ -1;
+    grid-column: 1/ span 7;
+}
+
+.recuadro {
+    display: flex;
+    align-items: left;
+    flex-flow: column;
+    justify-content: center;
+    grid-row: 2/span 6;
+    grid-column: 6/ span 6;
+    background-color: #2658e4;
+    color: white;
+    padding: 40px;
+
+    
+}
+
+#boton {
+    background-color: white;
+    color: #2658e4;
+    width: 180px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
