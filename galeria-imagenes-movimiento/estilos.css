@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 50px;
+}
+
+h1 {
+    margin: 20px;
+    margin-left: 30px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: 80px;
+    bottom: 0; 
+    width: 1290px;
+    height: 4px;
+    top: 90px;
+    background-color: blue; 
+}
+
+section {
+    margin: 20px;
+}
+
+.picture {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 250px;
+    margin: 10px;
+    overflow: hidden; 
+}
+
+.picture__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.picture::after {
+    content: "";
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,200, 0.5); 
+    transition: bottom 0.3s ease; 
+    z-index: 1;
+}
+
+.picture:hover::after {
+    bottom: 0; 
+}
+
+.show {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+.show:target {
+    transform: scale(1);
+}
+
+.show__image1, .show__image2, .show__image3, 
+.show__image4, .show__image5, .show__image6 {
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    position: relative;
+}
+
+.show__image1 {
+    background-image: url("img/imagen1.jpg");
+}
+
+.show__image2 {
+    background-image: url("img/imagen2.jpg");
+}
+
+.show__image3 {
+    background-image: url("img/imagen3.jpg");
+}
+
+.show__image4 {
+    background-image: url("img/imagen4.jpg");
+}
+
+.show__image5 {
+    background-image: url("img/imagen5.jpg");
+}
+
+.show__image6 {
+    background-image: url("img/imagen6.jpg");
+}
+
+.show__close {
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: -20px; 
+    right: -20px;
+    border-radius: 50%; 
+    z-index: 2; 
+    cursor: pointer; 
+}
